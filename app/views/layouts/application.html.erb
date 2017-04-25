@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Call to Battle</title>
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= favicon_link_tag 'favicon.ico' %>
+     <script type="text/javascript" language="JavaScript">
+      function set_logo_size()
+      {
+          //var window_width = $(window).width();
+          //$('.logo-pic').attr('style', 'width:' + window_width - 120 + 'px;');
+        /*  if($(this).scrollTop() < 100) {
+           $('.padnav').css('padding-top', $('div .logo-pic').css('height'))
+          } else {*/
+            $('.padnav').css('padding-top', 0)
+          //}
+          
+      }
+      $(document).ready(function() {
+          set_logo_size();
+          $(window).bind('resize', function() { set_logo_size(); });
+      });
+  </script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+   <!-- <div class="col-md-12 logo-pic">
+    </div>-->
+
+            
+    <div class='padnav'>
+     <nav class="navbar navbar-default main-nav" role="navigation">
+      <div class='container'>
+        
+               
+            
+      <div class="navbar-brand logo-pic">
+           <a href=home><%= image_tag "logo.png", :class => "logo-pic"%></a>
+        </div>
+        <!--<div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <%= link_to root_path, class: 'navbar-brand navtext' do %>
+              Home
+            <% end %>
+            </div>-->
+            
+            
+            
+             <div class="collapse navbar-collapse" id="main-nav-collapse">
+              <ul class="nav navbar-nav navbar-left navtext">
+                <li><%= link_to "Features", home_path  %></li>
+                
+                <li class="skin"><%= link_to "Weapon Cache", cache_path  %></li>
+              </ul>
+              
+                            <ul class="nav navbar-nav navbar-right navtext">
+                <li><%= link_to "Plans", home_path  %></li>
+                <li><%= link_to "Other Mods", home_path %></li>
+               </ul>
+            </div>
+            
+           
+      </div>
+    </nav>
+    </div>
+<div class="main">
+  <%= yield %>
+</div>
+
+</body>
+</html>

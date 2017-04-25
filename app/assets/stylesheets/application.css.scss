@@ -1,0 +1,175 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  background: #603813; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #603813, #000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #603813, #000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    background-image: url(/assets/background.png);
+    background-size:cover;
+}
+
+
+
+
+.well {
+   background-color: rgba(245, 245, 245, 0.5);
+   border: 1px solid #969696;
+       z-index: -1;
+}
+
+/*body {
+  background: -webkit-linear-gradient(90deg, #739CBD 10%, #316D9E 90%); /* Chrome 10+, Saf5.1+ */
+ /* background:    -moz-linear-gradient(90deg, #739CBD 10%, #316D9E 90%); /* FF3.6+ */
+ /* background:     -ms-linear-gradient(90deg, #739CBD 10%, #316D9E 90%); /* IE10 */
+ /* background:      -o-linear-gradient(90deg, #739CBD 10%, #316D9E 90%); /* Opera 11.10+ */
+ /* background:         linear-gradient(90deg, #739CBD 10%, #316D9E 90%); /* W3C */
+/*}*/
+
+.logo-hidden {
+    visibility: hidden;
+}
+
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5fe8d3;
+     -webkit-transition: color 1s;
+       transition: color 1s;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #5fe8d3;
+         -webkit-transition: color 1s;
+       transition: color 1s;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 120px;
+    height: 100px;
+    padding-top: 0;
+    z-index: 10;
+}
+
+
+.navtext {
+    font-size: 20px;    
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+
+.padnav {
+
+  //  left: 16px;
+    padding-top: 0px;
+  width: 100%;
+  left: 0%;
+  position: fixed;
+  //  width: 98.0%;
+    transform-origin: 50%, 50%;
+/*  -webkit-transition: width 0.5s;
+   transition: width 0.5s;
+   
+     -webkit-transition: left 0.0s;
+   transition: left 0.0s;*/
+}
+
+.padnavscrolled {
+  padding-top: 0px;
+  width: 100%;
+  left: 0%;
+  position: fixed;
+  
+  /*  -webkit-transition: width 0.5s;
+   transition: width 0.5s;
+   
+   -webkit-transition: left 0.5s;
+   transition: left 0.5s;*/
+}
+
+
+.main-nav {
+    border-color: #000;
+    position: relative;
+    top:0;
+    
+  
+    margin-bottom: 0px;
+    z-index: 1000;
+    border-radius: 0px;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    background-image: url(/assets/metal.png);
+}
+ 
+.main-nav-scrolled {
+   top:0;
+}
+
+img .logo-pic {
+    //size
+    //position: fixed;
+    //left : 50%;
+   /* width: 100%; 
+    max-width: 100%;*/
+}
+
+.navtext {
+    z-index: 10;
+}
+
+div .logo-pic {
+    position:absolute;
+       left: 50%;
+     transform: translate(-50%, 0%);
+     
+      width: auto;
+    height: 100%;
+     
+     // left: 50%;
+   // margin-left: -50% !important;  /* 50% of your logo width */
+    z-index: 1;
+   // position: center;
+    /*height: 300px;
+    position: relative; 
+    left: 0%; 
+    width: 100%;
+    z-index: 00;
+    padding-bottom: 300;*/
+}
+
+
+.main {
+    padding-top: 100px;
+}

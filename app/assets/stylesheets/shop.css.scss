@@ -1,0 +1,53 @@
+
+.crate {
+    font-size: 30;
+    padding: 0;
+    
+    border-radius: 10px;
+    z-index: -100;
+}
+
+.woodcrate {
+    background-image: url(/assets/crates/wood.png);
+}
+
+.ironcrate {
+    background-image: url(/assets/crates/iron.png);
+}
+
+.steelcrate {
+    background-image: url(/assets/crates/steel.png);
+}
+
+
+.crpic {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.descwell {
+    margin: 0;
+    border-radius: 0;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-width: 0px;
+}
+
+.dhead {
+    color: #f2c371 !important;
+    font-family: "Georgia";
+}
+
+.desc {
+    color: #f4f127;
+    font-family: "Lucida Console", "Courier New";
+}
+
+.buywell {
+    background-color: #b70000;
+    margin: 0;
+    border-color: black;
+    color: white;
+    
+    background-image: url(/assets/button.png);
+}
